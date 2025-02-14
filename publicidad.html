@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicidad de Producto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+        .content .text {
+            max-width: 600px;
+        }
+        .content .image {
+            max-width: 500px;
+        }
+        .cta {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 40px;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #2ecc71;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function cambiarImagen() {
+            // Cambia la fuente de la imagen cuando el botón es presionado
+            document.getElementById("imagenProducto").src = "https://via.placeholder.com/600x400?text=Imagen+Actualizada";
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>¡Descubre el Nuevo Producto X!</h1>
+        <p>La mejor tecnología para tu vida diaria</p>
+    </header>
+
+    <div class="content">
+        <div class="text">
+            <h2>Innovador y fácil de usar</h2>
+            <p>El Producto X ha sido diseñado para brindarte lo mejor en comodidad y eficiencia. Con sus características de última generación, puedes realizar tus tareas diarias con mayor facilidad.</p>
+            <ul>
+                <li>Alta Durabilidad</li>
+                <li>Fácil Instalación</li>
+                <li>Compatibilidad con todos tus dispositivos</li>
+            </ul>
+            <button onclick="cambiarImagen()">Cambiar Imagen</button> <!-- Botón que cambia la imagen -->
+        </div>
+        <div class="image">
+            <img id="imagenProducto" src="https://via.placeholder.com/400" alt="Imagen del producto" width="100%">
+        </div>
+    </div>
+
+    <div class="cta">
+        <p>¡No te quedes atrás! Aprovecha la oferta exclusiva y compra ahora.</p>
+        <a href="#">Comprar Ahora</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Producto X - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
